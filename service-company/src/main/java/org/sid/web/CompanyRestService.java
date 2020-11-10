@@ -10,11 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 @RestController
 public class CompanyRestService {
-	@Value("${xParam}")
+
 	private int xParam;
-	@Value("${yParam}")
+
 	private int yParam;
-	@Value("${me}")
 	private String me;
 	@GetMapping("/myConfig")
 	public Map<String, Object> myConfig(){
